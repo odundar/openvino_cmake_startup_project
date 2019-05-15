@@ -1,7 +1,7 @@
 ﻿// OpenVINO_Basic.cpp : Defines the entry point for the application.
 //
 
-#include "OpenVINO_Basic.h"
+#include "openvino_startup.h"
 
 #include <inference_engine.hpp>
 
