@@ -26,6 +26,6 @@ git clone https://github.com/odundar/openvino_cmake_startup_project.git
 
 - Select CMake -> Build All
 
-- Then, select target from Toolbar clicking on down arrow, select the exe file.
+- Then, select target `openvino_startup.exe` from Toolbar clicking on down arrow, select the exe file.
 
 - Click on Debug and Run or Debug the application.
