@@ -1,2 +1,8 @@
 .vs
 .vs/*
+.settings/
+.settings/*
+/bin/
+.cproject
+build/
+.project

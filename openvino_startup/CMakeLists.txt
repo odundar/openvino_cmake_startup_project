@@ -1,7 +1,7 @@
 ﻿# CMakeList.txt : CMake project for OpenVINO_Basic, include source and define
 # project specific logic here.
 #
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.5)
 
 set (TARGET_NAME "openvino_startup")
 
@@ -69,6 +69,19 @@ else()
     endif()
 endif()
 
+####################################
+## to use C++11
+set (CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
+if (${CMAKE_CXX_COMPILER_ID} STREQUAL GNU)
+    set (CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
+endif()
+####################################
+
+if (${CMAKE_CXX_COMPILER_ID} STREQUAL GNU)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
+endif()
+
 if (IE_NOT_FOUND_MESSAGE)
     find_package(InferenceEngine 1.6 QUIET)
     if (NOT(InferenceEngine_FOUND))
@@ -79,7 +92,7 @@ else()
 endif()
 
 if (UNIX)
-    set (LIB_DL dl)
+	set (LIB_DL dl)
 endif()
 
 # Add source to this project's executable.
