@@ -7,4 +7,4 @@ export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/opencv/lib:/opt/int
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/external/gna/lib:/opt/intel/openvino/deployment_tools/inference_engine/external/mkltiny_lnx/lib"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/external/tbb/lib"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64"
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino_2019.1.133/openvx/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/opt/intel/openvino/openvx/lib"
