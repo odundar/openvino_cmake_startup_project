@@ -1,5 +1,5 @@
 export PATH="$PATH:/opt/intel/openvino/deployment_tools/model_optimizer"
-export PYTHONPATH="/opt/intel/openvino/python/python3.5:/opt/intel/openvino/deployment_tools/model_optimizer:"
+export PYTHONPATH="$PYTHONPATH:/opt/intel/openvino/python/python3.5:/opt/intel/openvino/deployment_tools/model_optimizer:"
 export OpenCV_DIR="/opt/intel/openvino/opencv/cmake"
 export InferenceEngine_DIR="/opt/intel/openvino/deployment_tools/inference_engine/share"
 export IE_PLUGINS_PATH="/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64"

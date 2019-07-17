@@ -50,5 +50,7 @@ Now, you can proceed to create a new CMake project and start using CMakeLists.tx
 
 4. Setup environment variables system wide with using `intel-openvino.sh` file, copy file to `/etc/profile.d` folder. 
 
+Or simply run config_environment.sh and reboot your PC.
+
 Now, your project should build and you should be able to compile, run and debug your application.
 
